@@ -1,78 +1,19 @@
 <template lang="html">
-    <v-container>
-      <div>
-        <h2>안녕하세요!</h2>
-        <br><br>
-      </div>
-      <v-layout column>
-        <v-flex>
-          <v-layout row wrap>
-            <v-flex xs6>
-              <v-flex>
-                <h1>파일</h1>
-                  <v-data-table
-                    :headers="headers"
-                    :items="desserts"
-                    :expand-icon="home"
-                    :items-per-page="5"
-                    class="elevation-1"
-                  ></v-data-table>
-                <v-spacer></v-spacer>
-              </v-flex>
-              <v-flex><br><v-divider></v-divider><br></v-flex>
-              <v-flex>
-                <h1>빠른액세스</h1>
-                <v-simple-table>
-                  <template v-slot:default>
-                    <thead>
-                      <tr>
-                        <th class="text-left">Name</th>
-                        <th class="text-left">Date</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr v-for="item in favorite" :key="item.name">
-                        <td>{{ item.name }}</td>
-                        <td>{{ item.date }}</td>
-                      </tr>
-                    </tbody>
-                  </template>
-                </v-simple-table>
-                <v-divider></v-divider>
-              </v-flex>
-            </v-flex>
-            <v-flex><br><v-divider></v-divider><br></v-flex>
-            <v-flex xs6>
-              <h1>즐겨찾기</h1>
-              <v-simple-table>
-                <template v-slot:default>
-                  <thead>
-                    <tr>
-                      <th class="text-left">Name</th>
-                      <th class="text-left">Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="item in favorite" :key="item.name">
-                      <td>{{ item.name }}</td>
-                      <td>{{ item.date }}</td>
-                    </tr>
-                  </tbody>
-                </template>
-              </v-simple-table>
-              <v-divider></v-divider>
-            </v-flex>
-          </v-layout>
-        </v-flex>
-
-      </v-layout>
+    <v-container fluid>
+      <FileList></FileList>
     </v-container>
 </template>
 
 
 
 <script>
+  import FileList from '@/components/FileList'
+  import Favlist from '@/components/Fav_list'
   export default {
+    components:{
+      FileList,
+      Favlist
+    },
     data () {
       return {
         headers: [

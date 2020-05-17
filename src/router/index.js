@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Main from '../views/Main.vue'
 import Contact from '../views/Contact.vue'
-
+import File from '../views/File.vue'
 Vue.use(VueRouter)
 
 
@@ -33,5 +33,10 @@ export default new VueRouter ({
         name:'Login',
         component: Login
       },
+      {
+        path:'/file',
+        name:'File',
+        component: File
+      }
     ]
 })

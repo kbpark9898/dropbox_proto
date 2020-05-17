@@ -14,7 +14,7 @@
           <v-list-item-title>홈</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-list-item router :to="{name: 'Main'}" exact>
+      <v-list-item router :to="{name: 'File'}" exact>
         <v-list-item-action>
           <v-icon>mdi-file</v-icon>
         </v-list-item-action>
@@ -99,7 +99,7 @@
         solo-inverted
         hide-details
         prepend-inner-icon="mdi-magnify"
-        label="검색"
+        label="전체 검색"
         class="hidden-sm-and-down"
       ></v-text-field>
       <v-spacer></v-spacer>
@@ -125,8 +125,7 @@
     </v-app-bar>
     <v-content>
       <v-container
-        class="fill-height"
-        fluid
+
       >
         <router-view></router-view>
       </v-container>
