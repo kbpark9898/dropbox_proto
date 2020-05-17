@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-toolbar flat>
-      <v-toolbar-title>My files</v-toolbar-title>
+      <v-toolbar-title>파일</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -17,9 +17,8 @@
       >
         <v-list-item-avatar>
           <v-icon
-            :class="[item.iconClass]"
-            v-text="item.icon"
-          ></v-icon>
+
+          >{{item.iconClass}}</v-icon>
         </v-list-item-avatar>
 
         <v-list-item-content>
@@ -44,10 +43,7 @@
         @click=""
       >
         <v-list-item-avatar>
-          <v-icon
-            :class="[item.iconClass]"
-            v-text="item.icon"
-          ></v-icon>
+          <v-icon> {{item.iconClass}}</v-icon>
         </v-list-item-avatar>
 
         <v-list-item-content>
@@ -69,13 +65,13 @@
   export default {
     data: () => ({
       items: [
-        { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos', subtitle: 'Jan 9, 2014' },
-        { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes', subtitle: 'Jan 17, 2014' },
-        { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work', subtitle: 'Jan 28, 2014' },
+        { icon: 'folder', iconClass: 'mdi-folder', title: 'Photos', subtitle: 'Jan 9, 2014' },
+        { icon: 'folder', iconClass: 'mdi-folder', title: 'Recipes', subtitle: 'Jan 17, 2014' },
+        { icon: 'folder', iconClass: 'mdi-folder', title: 'Work', subtitle: 'Jan 28, 2014' },
       ],
       items2: [
-        { icon: 'assignment', iconClass: 'blue white--text', title: 'Vacation itinerary', subtitle: 'Jan 20, 2014' },
-        { icon: 'call_to_action', iconClass: 'amber white--text', title: 'Kitchen remodel', subtitle: 'Jan 10, 2014' },
+        { icon: 'assignment', iconClass: 'mdi-file', title: 'Vacation itinerary', subtitle: 'Jan 20, 2014' },
+        { icon: 'call_to_action', iconClass: 'mdi-PdfBox', title: 'Kitchen remodel', subtitle: 'Jan 10, 2014' },
       ],
     }),
   }
