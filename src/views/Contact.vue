@@ -1,10 +1,14 @@
 <template lang="html">
-
+  <contact></contact>
 </template>
 
 <script>
-export default {
-}
+  import contact from '@/components/make_contact.vue'
+  export default {
+    components:{
+      contact
+    }
+  }
 </script>
 
 <style lang="css" scoped>

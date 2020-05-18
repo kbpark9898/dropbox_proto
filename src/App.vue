@@ -6,7 +6,7 @@
       app
     >
     <v-list dense>
-      <v-list-item router :to="{name: 'Home'}" exact>
+      <v-list-item router :to="{name: 'Main'}" exact>
         <v-list-item-action>
           <v-icon>mdi-home</v-icon>
         </v-list-item-action>
@@ -22,7 +22,7 @@
           <v-list-item-title>파일</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-list-item router :to="{name: 'Main'}" exact>
+      <v-list-item router :to="{name: 'Fav'}" exact>
         <v-list-item-action>
           <v-icon>mdi-heart</v-icon>
         </v-list-item-action>
@@ -30,7 +30,7 @@
           <v-list-item-title>즐겨찾기</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-list-item router :to="{name: 'Main'}" exact>
+      <v-list-item router :to="{name: 'Quick'}" exact>
         <v-list-item-action>
           <v-icon>mdi-history</v-icon>
         </v-list-item-action>

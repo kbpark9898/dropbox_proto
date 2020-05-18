@@ -7,7 +7,7 @@
       color="light-blue"
       dark
     >
-      <v-toolbar-title>즐겨찾기</v-toolbar-title>
+      <v-toolbar-title>파일</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
     <v-list two-line subheader>

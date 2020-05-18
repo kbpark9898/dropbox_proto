@@ -7,39 +7,44 @@
       <v-layout column>
         <v-flex>
           <v-layout row wrap>
-            <v-flex xs6>
+            <v-flex lg6>
               <v-flex>
-                <FileList></FileList>
+                <Filecard></Filecard>
               </v-flex>
-              <v-flex><br><v-divider></v-divider><br></v-flex>
-              <v-flex>
-                <h1>빠른액세스</h1>
-                <v-simple-table>
-                  <template v-slot:default>
-                    <thead>
-                      <tr>
-                        <th class="text-left">Name</th>
-                        <th class="text-left">Date</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr v-for="item in favorite" :key="item.name">
-                        <td>{{ item.name }}</td>
-                        <td>{{ item.date }}</td>
-                      </tr>
-                    </tbody>
-                  </template>
-                </v-simple-table>
-                <v-divider></v-divider>
-              </v-flex>
+              <v-flex><br><br></v-flex>
             </v-flex>
-            <v-flex><br><v-divider></v-divider><br></v-flex>
-            <v-flex xs6>
+            <v-flex><br><br></v-flex>
+            <v-flex lg6>
               <Favlist></Favlist>
             </v-flex>
           </v-layout>
         </v-flex>
-
+      </v-layout>
+      <v-divider></v-divider>
+      <v-layout column>
+        <v-flex>
+          <v-toolbar flat>
+            <v-toolbar-title>빠른 액세스</v-toolbar-title>
+            <v-spacer></v-spacer>
+          </v-toolbar>
+          <v-simple-table>
+            <template v-slot:default>
+              <thead>
+                <tr>
+                  <th class="text-left">Name</th>
+                  <th class="text-left">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in favorite" :key="item.name">
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.date }}</td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+          <v-divider></v-divider>
+        </v-flex>
       </v-layout>
     </v-container>
 </template>
@@ -49,10 +54,12 @@
 <script>
   import FileList from '@/components/FileList'
   import Favlist from '@/components/Fav_list'
+  import Filecard from '@/components/FileCardlist.vue'
   export default {
     components:{
       FileList,
-      Favlist
+      Favlist,
+      Filecard
     },
     data () {
       return {

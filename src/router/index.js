@@ -5,6 +5,8 @@ import Login from '../views/Login.vue'
 import Main from '../views/Main.vue'
 import Contact from '../views/Contact.vue'
 import File from '../views/File.vue'
+import FavList from '../views/FavList.vue'
+import QuickList from '../views/QuickList.vue'
 Vue.use(VueRouter)
 
 
@@ -37,6 +39,17 @@ export default new VueRouter ({
         path:'/file',
         name:'File',
         component: File
+      },
+      {
+        path:'/fav',
+        name:'Fav',
+        component: FavList
+      },
+      {
+        path:'/quick',
+        name:'Quick',
+        component : QuickList
       }
+
     ]
 })
