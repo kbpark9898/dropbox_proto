@@ -7,6 +7,7 @@ import Contact from '../views/Contact.vue'
 import File from '../views/File.vue'
 import FavList from '../views/FavList.vue'
 import QuickList from '../views/QuickList.vue'
+import Feedback from '../views/Feedback.vue'
 Vue.use(VueRouter)
 
 
@@ -49,6 +50,11 @@ export default new VueRouter ({
         path:'/quick',
         name:'Quick',
         component : QuickList
+      },
+      {
+        path:'/feedback',
+        name:'Feedback',
+        component: Feedback
       }
 
     ]

@@ -62,7 +62,7 @@
           <v-list-item-title>휴지통</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-      <v-list-item router :to="{name: 'Main'}" exact>
+      <v-list-item router :to="{name: 'Feedback'}" exact>
         <v-list-item-action>
           <v-icon>mdi-message</v-icon>
         </v-list-item-action>
