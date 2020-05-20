@@ -1,7 +1,7 @@
 <template lang="html">
     <v-container>
       <div>
-        <h2>안녕하세요!</h2>
+        <h2>안녕하세요! 이것은 add_profile branch 입니다!</h2>
         <br><br>
       </div>
       <v-layout column>
